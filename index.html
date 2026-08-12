@@ -214,6 +214,7 @@ h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--copper
 .slot-pad::after{content:'';position:absolute;inset:5px;border-radius:50%;background:var(--board)}
 .slot-l{font-family:var(--mono);font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--faint)}
 .slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.proj-vis>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* keepout: private projects */
 .keepout{height:100%;min-height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;
   background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(224,138,60,.06) 9px,rgba(224,138,60,.06) 10px)}
@@ -574,6 +575,31 @@ footer{padding:6rem 0 2.5rem;position:relative}
             <div class="proj-foot">
               <span class="sdot s-done"></span><span>Complete</span>
               <span class="meta">KiCad · Texas Spacecraft Lab</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PNL-01: StairwayToGreen -->
+      <article class="proj rv d4">
+        <div class="proj-top">
+          <div class="proj-vis">
+            <img src="images/stairwaytogreen-panel.jpg" alt="StairwayToGreen traffic light control panel, showing the four-way intersection layout with signal heads, path arrows and walk indicators">
+          </div>
+          <div class="proj-body">
+            <div class="proj-headrow">
+              <span class="refdes">PNL-01</span>
+              <div>
+                <div class="proj-name">StairwayToGreen</div>
+                <div class="proj-badges">
+                  <span class="pb pb-hot">24&nbsp;VDC</span><span class="pb">PLC</span><span class="pb">Productivity1000</span><span class="pb">Ladder Logic</span>
+                </div>
+              </div>
+            </div>
+            <p class="proj-desc">A working four-way intersection built from scratch on a PLC trainer panel. 44 outputs drive the signal heads, protected left-turn arrows and walk signs — a two-register state machine keeps it from ever skipping a phase.</p>
+            <div class="proj-foot">
+              <span class="sdot s-done"></span><span>Complete</span>
+              <span class="meta">Ladder Logic · Kurtin Robotics · 2026</span>
             </div>
           </div>
         </div>
